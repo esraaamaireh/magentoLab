@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-991821406\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse--1959804384\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Login_Test_Cases" class="method navigator-link" hash-for-method="logInTest">logInTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="auth.Auth" class="method navigator-link" hash-for-method="LogIn">LogIn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Signup_Test_Cases" class="method navigator-link" hash-for-method="testTow">testTow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="auth.Auth" class="method navigator-link" hash-for-method="LogOut">LogOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="auth.Auth" class="method navigator-link" hash-for-method="SignUp">SignUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,31 +132,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Login_Test_Cases</span>
+              <span class="class-name">auth.Auth</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logInTest">
-                  </a> <!-- logInTest -->
-                  <span class="method-name">logInTest</span>
-                  <em>
-(This A Test For Login Process)                  </em>
+                  <a name="LogIn">
+                  </a> <!-- LogIn -->
+                  <span class="method-name">LogIn</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Signup_Test_Cases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testTow">
-                  </a> <!-- testTow -->
-                  <span class="method-name">testTow</span>
+                  <a name="LogOut">
+                  </a> <!-- LogOut -->
+                  <span class="method-name">LogOut</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignUp">
+                  </a> <!-- SignUp -->
+                  <span class="method-name">SignUp</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +161,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-991821406\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse--1959804384\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -168,9 +170,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Parameters&quot;/&gt;
-      &lt;class name=&quot;Login_Test_Cases&quot;/&gt;
-      &lt;class name=&quot;Signup_Test_Cases&quot;/&gt;
+      &lt;class name=&quot;auth.Auth&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,7 +184,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (3 classes)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,20 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testTow')
-data.setCell(0, 2, 'Signup_Test_Cases')
-data.setCell(0, 3, 8715);
+data.setCell(0, 1, 'LogIn')
+data.setCell(0, 2, 'auth.Auth')
+data.setCell(0, 3, 25499);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logInTest')
-data.setCell(1, 2, 'Login_Test_Cases')
-data.setCell(1, 3, 5249);
+data.setCell(1, 1, 'LogOut')
+data.setCell(1, 2, 'auth.Auth')
+data.setCell(1, 3, 12402);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SignUp')
+data.setCell(2, 2, 'auth.Auth')
+data.setCell(2, 3, 10727);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -249,45 +253,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Login_Test_Cases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">auth.Auth</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Signup_Test_Cases</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">3495 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Login_Test_Cases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">logInTest</span>
-                <span class="method-start">7760 ms</span>
+                <span class="method-name">SignUp</span>
+                <span class="method-start">5653 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Signup_Test_Cases</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testTow</span>
-                <span class="method-start">13024 ms</span>
+                <span class="method-name">LogOut</span>
+                <span class="method-start">16386 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Login_Test_Cases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LogIn</span>
+                <span class="method-start">28791 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">postTest</span>
-                <span class="method-start">21746 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Signup_Test_Cases</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">postTest</span>
-                <span class="method-start">21746 ms</span>
+                <span class="method-start">54293 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
