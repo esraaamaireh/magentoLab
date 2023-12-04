@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T17:54:32 EET" name="Default suite" finished-at="2023-12-04T17:55:27 EET" duration-ms="54331">
+  <suite started-at="2023-12-04T17:56:09 EET" name="Default suite" finished-at="2023-12-04T17:58:09 EET" duration-ms="119829">
     <groups>
     </groups>
-    <test started-at="2023-12-04T17:54:32 EET" name="Default test" finished-at="2023-12-04T17:55:27 EET" duration-ms="54331">
+    <test started-at="2023-12-04T17:56:09 EET" name="Default test" finished-at="2023-12-04T17:58:09 EET" duration-ms="119829">
       <class name="auth.Auth">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:auth.Auth@5942ee04]" started-at="2023-12-04T17:54:32 EET" name="setUp" finished-at="2023-12-04T17:54:38 EET" duration-ms="5613" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:56:09 EET" name="setUp" finished-at="2023-12-04T17:56:57 EET" duration-ms="47600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SignUp()[pri:1, instance:auth.Auth@5942ee04]" started-at="2023-12-04T17:54:38 EET" name="SignUp" finished-at="2023-12-04T17:54:49 EET" duration-ms="10727" status="PASS">
+        <test-method signature="SignUp()[pri:1, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:56:57 EET" name="SignUp" finished-at="2023-12-04T17:57:31 EET" duration-ms="33676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUp -->
-        <test-method signature="LogOut()[pri:2, instance:auth.Auth@5942ee04]" started-at="2023-12-04T17:54:49 EET" name="LogOut" finished-at="2023-12-04T17:55:01 EET" duration-ms="12402" status="PASS">
+        <test-method signature="LogOut()[pri:2, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:57:31 EET" name="LogOut" finished-at="2023-12-04T17:57:49 EET" duration-ms="17843" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogOut -->
-        <test-method signature="LogIn()[pri:3, instance:auth.Auth@5942ee04]" started-at="2023-12-04T17:55:01 EET" name="LogIn" finished-at="2023-12-04T17:55:27 EET" duration-ms="25499" status="PASS">
+        <test-method signature="LogIn()[pri:3, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:57:49 EET" name="LogIn" finished-at="2023-12-04T17:58:09 EET" duration-ms="20572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogIn -->
-        <test-method is-config="true" signature="postTest()[pri:0, instance:auth.Auth@5942ee04]" started-at="2023-12-04T17:55:27 EET" name="postTest" finished-at="2023-12-04T17:55:27 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="postTest()[pri:0, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:58:09 EET" name="postTest" finished-at="2023-12-04T17:58:09 EET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postTest -->
