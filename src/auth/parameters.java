@@ -7,13 +7,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.asserts.SoftAssert;
 
 public class parameters {
-	SoftAssert softAssert=new SoftAssert();
-	static WebDriver driver = new ChromeDriver();
+	protected  SoftAssert softAssert=new SoftAssert();
+	protected static WebDriver driver = new ChromeDriver();
+	protected static String iteams = "https://magento.softwaretestingboard.com/men/tops-men/jackets-men.html";
 	static String LogInUrl = "https://magento.softwaretestingboard.com/customer/account/login/";
 	static String website = "https://magento.softwaretestingboard.com/";
 	static String SignupUrl = "https://magento.softwaretestingboard.com/customer/account/create/";
 	static String LogOutUrl = "https://magento.softwaretestingboard.com/customer/account/logoutSuccess/";
-	static Random random = new Random();
+	protected static Random random = new Random();
 	static String[] firstNames = { "zahra", "Afra", "Muso", "hrlly", "yamn", "mohaud" };
 	static String[] lastNames = { "adil", "mosa", "ahmad", "kalis", "amer", "ibrahim" };
 	static int randomNumber = random.nextInt(firstNames.length);

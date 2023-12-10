@@ -1,33 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T17:56:09 EET" name="Default suite" finished-at="2023-12-04T17:58:09 EET" duration-ms="119829">
+  <suite started-at="2023-12-11T01:54:48 EET" name="Default suite" finished-at="2023-12-11T01:55:18 EET" duration-ms="29325">
     <groups>
     </groups>
-    <test started-at="2023-12-04T17:56:09 EET" name="Default test" finished-at="2023-12-04T17:58:09 EET" duration-ms="119829">
-      <class name="auth.Auth">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:56:09 EET" name="setUp" finished-at="2023-12-04T17:56:57 EET" duration-ms="47600" status="PASS">
+    <test started-at="2023-12-11T01:54:48 EET" name="Default test" finished-at="2023-12-11T01:55:18 EET" duration-ms="29325">
+      <class name="iteams.Iteams">
+        <test-method is-config="true" signature="PreTest()[pri:0, instance:iteams.Iteams@14faa38c]" started-at="2023-12-11T01:54:49 EET" name="PreTest" finished-at="2023-12-11T01:54:58 EET" duration-ms="8985" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="SignUp()[pri:1, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:56:57 EET" name="SignUp" finished-at="2023-12-04T17:57:31 EET" duration-ms="33676" status="PASS">
+        </test-method> <!-- PreTest -->
+        <test-method signature="IteamsChoosen()[pri:1, instance:iteams.Iteams@14faa38c]" started-at="2023-12-11T01:54:58 EET" name="IteamsChoosen" finished-at="2023-12-11T01:55:04 EET" duration-ms="6072" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignUp -->
-        <test-method signature="LogOut()[pri:2, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:57:31 EET" name="LogOut" finished-at="2023-12-04T17:57:49 EET" duration-ms="17843" status="PASS">
+        </test-method> <!-- IteamsChoosen -->
+        <test-method signature="SizeAdding()[pri:2, instance:iteams.Iteams@14faa38c]" started-at="2023-12-11T01:55:04 EET" name="SizeAdding" finished-at="2023-12-11T01:55:07 EET" duration-ms="3334" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LogOut -->
-        <test-method signature="LogIn()[pri:3, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:57:49 EET" name="LogIn" finished-at="2023-12-04T17:58:09 EET" duration-ms="20572" status="PASS">
+        </test-method> <!-- SizeAdding -->
+        <test-method signature="Color()[pri:3, instance:iteams.Iteams@14faa38c]" started-at="2023-12-11T01:55:07 EET" name="Color" finished-at="2023-12-11T01:55:07 EET" duration-ms="230" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Color mismatch message expected [XL] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Color mismatch message expected [XL] but found []
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at iteams.Iteams.Color(Iteams.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LogIn -->
-        <test-method is-config="true" signature="postTest()[pri:0, instance:auth.Auth@5a865416]" started-at="2023-12-04T17:58:09 EET" name="postTest" finished-at="2023-12-04T17:58:09 EET" duration-ms="2" status="PASS">
+        </test-method> <!-- Color -->
+        <test-method signature="Quantity()[pri:4, instance:iteams.Iteams@14faa38c]" started-at="2023-12-11T01:55:07 EET" name="Quantity" finished-at="2023-12-11T01:55:18 EET" duration-ms="10407" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postTest -->
-      </class> <!-- auth.Auth -->
+        </test-method> <!-- Quantity -->
+        <test-method is-config="true" signature="PostTest()[pri:0, instance:iteams.Iteams@14faa38c]" started-at="2023-12-11T01:55:18 EET" name="PostTest" finished-at="2023-12-11T01:55:18 EET" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostTest -->
+      </class> <!-- iteams.Iteams -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
